@@ -1,0 +1,55 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: 'kotlin-kapt'
+
+android {
+  compileSdkVersion versions.compileSdk
+  defaultConfig {
+    applicationId "com.jshvarts.kmp"
+    minSdkVersion versions.minSdk
+    targetSdkVersion versions.compileSdk
+    versionCode 7
+    versionName "1.5"
+    testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+  }
+
+  lintOptions {
+    lintConfig file("lint.xml")
+  }
+
+  buildTypes {
+    debug {
+      applicationIdSuffix ".debug"
+    }
+    release {
+      minifyEnabled false
+    }
+  }
+
+  kotlinOptions {
+    jvmTarget = "1.8"
+  }
+
+  compileOptions {
+    sourceCompatibility JavaVersion.VERSION_1_8
+    targetCompatibility JavaVersion.VERSION_1_8
+  }
+}
+
+dependencies {
+  implementation project(':shared')
+
+  implementation deps.kotlin.stdlib.jdk8
+  implementation deps.androidx.appCompat
+  implementation deps.androidx.recyclerView
+  implementation deps.androidx.ktx
+  implementation deps.material.core
+
+  implementation deps.timber
+
+  testImplementation deps.junit
+
+  androidTestImplementation deps.androidx.test.core
+  androidTestImplementation deps.androidx.test.runner
+}

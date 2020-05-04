@@ -1,0 +1,39 @@
+buildscript {
+  apply from: 'gradle/dependencies.gradle'
+
+  repositories {
+    google()
+    mavenCentral()
+    jcenter()
+    maven { url "https://dl.bintray.com/badoo/maven" }
+    maven { url "https://dl.bintray.com/robstoll/tutteli-jars" }
+  }
+
+  dependencies {
+    classpath 'com.android.tools.build:gradle:3.6.3'
+    classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$versions.kotlin"
+  }
+}
+
+plugins {
+  id "org.jlleitschuh.gradle.ktlint" version "9.1.1" apply false
+}
+
+allprojects {
+  repositories {
+    google()
+    mavenCentral()
+    jcenter()
+    maven { url 'https://dl.bintray.com/badoo/maven' }
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots' }
+    maven {
+      url 'https://dl.bintray.com/touchlabpublic/kotlin'
+      content {
+        includeGroup 'org.koin'
+      }
+    }
+  }
+}
+
+apply from: 'quality/lint.gradle'
+apply from: 'gradle/dependencies.gradle'

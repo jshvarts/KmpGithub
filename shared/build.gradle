@@ -1,0 +1,87 @@
+apply plugin: 'com.android.library'
+apply plugin: 'kotlin-multiplatform'
+apply plugin: 'kotlin-android-extensions'
+apply plugin: "org.jetbrains.kotlin.native.cocoapods"
+
+android {
+  compileSdkVersion versions.compileSdk
+  defaultConfig {
+    minSdkVersion versions.minSdk
+  }
+}
+
+kotlin {
+  targets {
+    fromPreset(presets.android, "android")
+
+    def buildForDevice = project.findProperty("device")?.toBoolean() ?: false
+    def iosTarget = (buildForDevice) ? presets.iosArm64 : presets.iosX64
+
+    fromPreset(iosTarget, "ios") {
+      binaries {
+        compilations.main.kotlinOptions.freeCompilerArgs += "-Xobjc-generics"
+        framework("shared") {
+          isStatic = false
+          linkerOpts.add("-lsqlite3")
+
+          // Disable bitcode embedding for the simulator build.
+          if (!buildForDevice) {
+            embedBitcode("disable")
+          }
+        }
+      }
+    }
+  }
+
+  sourceSets {
+    commonMain {
+      dependencies {
+        implementation kotlin('stdlib-common')
+      }
+    }
+    commonTest {
+      dependencies {
+        implementation kotlin('test-common')
+        implementation kotlin('test-annotations-common')
+      }
+    }
+    androidMain {
+      dependencies {
+        implementation kotlin('stdlib')
+        implementation deps.androidx.appCompat
+        implementation deps.androidx.preferences
+        implementation deps.timber
+      }
+    }
+    androidTest {
+      dependencies {
+        implementation kotlin('test')
+        implementation kotlin('test-junit')
+      }
+    }
+    iosMain {
+      dependencies {
+      }
+    }
+    iosTest {}
+
+    all {
+      languageSettings {
+        enableLanguageFeature('InlineClasses')
+        useExperimentalAnnotation('kotlin.Experimental')
+      }
+    }
+  }
+}
+
+version = 1.0 // also used by cocoapods plugin.
+
+dependencies {}
+
+task checkiOS {
+  def device = project.findProperty("iosDevice")?.toString() ?: "iPhone 8"
+  dependsOn 'linkDebugTestIos'
+  group = JavaBasePlugin.VERIFICATION_GROUP
+  description = "Runs tests for target 'ios' on an iOS simulator"
+}
+tasks.check.dependsOn checkiOS
