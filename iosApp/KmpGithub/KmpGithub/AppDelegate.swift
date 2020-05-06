@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  iosApp
+//  KmpGithub
 //
-//  Created by James Shvarts on 5/4/20.
+//  Created by James Shvarts on 5/6/20.
 //  Copyright © 2020 James Shvarts. All rights reserved.
 //
 

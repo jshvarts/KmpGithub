@@ -33,6 +33,12 @@ kotlin {
     }
   }
 
+  cocoapods {
+    // Configure fields required by CocoaPods.
+    summary = "Native ios target"
+    homepage = "Link to a Kotlin/Native module"
+  }
+
   sourceSets {
     commonMain {
       dependencies {
@@ -74,7 +80,8 @@ kotlin {
   }
 }
 
-version = 1.0 // also used by cocoapods plugin.
+// CocoaPods requires the podspec to have a version.
+version = 1.0
 
 dependencies {}
 
