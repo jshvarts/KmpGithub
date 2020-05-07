@@ -43,6 +43,8 @@ kotlin {
     commonMain {
       dependencies {
         implementation kotlin('stdlib-common')
+        implementation deps.coroutines.coreCommon
+        implementation deps.ktorClient.core
       }
     }
     commonTest {
@@ -56,6 +58,8 @@ kotlin {
         implementation kotlin('stdlib')
         implementation deps.androidx.appCompat
         implementation deps.androidx.preferences
+        implementation deps.coroutines.android
+        implementation deps.ktorClient.android
         implementation deps.timber
       }
     }
@@ -67,6 +71,8 @@ kotlin {
     }
     iosMain {
       dependencies {
+        implementation deps.coroutines.ios
+        implementation deps.ktorClient.ios
       }
     }
     iosTest {}

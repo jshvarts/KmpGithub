@@ -32,8 +32,11 @@ android {
   }
 
   compileOptions {
-    sourceCompatibility JavaVersion.VERSION_1_8
     targetCompatibility JavaVersion.VERSION_1_8
+  }
+
+  packagingOptions {
+    exclude 'META-INF/*.kotlin_module'
   }
 }
 
@@ -44,12 +47,9 @@ dependencies {
   implementation deps.androidx.appCompat
   implementation deps.androidx.recyclerView
   implementation deps.androidx.ktx
+  implementation deps.coroutines.android
   implementation deps.material.core
-
   implementation deps.timber
 
   testImplementation deps.junit
-
-  androidTestImplementation deps.androidx.test.core
-  androidTestImplementation deps.androidx.test.runner
 }
