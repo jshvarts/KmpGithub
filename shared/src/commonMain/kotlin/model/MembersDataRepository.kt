@@ -2,7 +2,6 @@ package com.jshvarts.kmp.shared.model
 
 import com.jshvarts.kmp.shared.api.GithubApi
 import com.jshvarts.kmp.shared.api.UpdateDataException
-import com.jshvarts.kmp.shared.repository.DataRepository
 
 class MembersDataRepository(private val api: GithubApi) : DataRepository {
   override var members: String? = null
@@ -13,10 +12,12 @@ class MembersDataRepository(private val api: GithubApi) : DataRepository {
     val newMembers = try {
       api.getMembers()
     } catch (t: Throwable) {
+      println("Unable to get members $t")
       throw UpdateDataException()
     }
 
     if (newMembers != members) {
+      println("Got ${newMembers.count()} members")
       members = newMembers
       notifyRefreshListeners()
     }

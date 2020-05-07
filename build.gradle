@@ -2,9 +2,10 @@ buildscript {
   apply from: 'gradle/dependencies.gradle'
 
   repositories {
-    google()
     mavenCentral()
+    google()
     jcenter()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
   }
 
   dependencies {
@@ -19,9 +20,10 @@ plugins {
 
 allprojects {
   repositories {
-    google()
     mavenCentral()
+    google()
     jcenter()
+    maven { url 'https://oss.sonatype.org/content/repositories/snapshots/' }
   }
 }
 

@@ -1,4 +1,4 @@
-package com.jshvarts.kmp.shared.repository
+package com.jshvarts.kmp.shared.model
 
 interface DataRepository {
   var members: String?

@@ -28,7 +28,10 @@ buildscript {
       ],
       'junit': 'junit:junit:4.12',
       'truth': 'com.google.truth:truth:0.40',
-      'timber': 'com.jakewharton.timber:timber:4.7.1',
+      'timber': [
+          common: 'com.jakewharton.timber:timber-common:5.0.0-SNAPSHOT',
+          android: 'com.jakewharton.timber:timber:4.7.1',
+      ],
       'kotlin': [
           'stdlib': [
               'jdk8': "org.jetbrains.kotlin:kotlin-stdlib-jdk8:${versions.kotlin}",

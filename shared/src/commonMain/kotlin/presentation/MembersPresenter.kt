@@ -1,7 +1,7 @@
 package com.jshvarts.kmp.shared.presentation
 
 import com.jshvarts.kmp.shared.ApplicationDispatcher
-import com.jshvarts.kmp.shared.repository.DataRepository
+import com.jshvarts.kmp.shared.model.DataRepository
 import kotlinx.coroutines.launch
 
 class MembersPresenter(

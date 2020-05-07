@@ -49,7 +49,7 @@ dependencies {
   implementation deps.androidx.ktx
   implementation deps.coroutines.android
   implementation deps.material.core
-  implementation deps.timber
+  implementation deps.timber.android
 
   testImplementation deps.junit
 }

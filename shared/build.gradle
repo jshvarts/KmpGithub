@@ -45,6 +45,7 @@ kotlin {
         implementation kotlin('stdlib-common')
         implementation deps.coroutines.coreCommon
         implementation deps.ktorClient.core
+        implementation deps.timber.common
       }
     }
     commonTest {
@@ -60,7 +61,6 @@ kotlin {
         implementation deps.androidx.preferences
         implementation deps.coroutines.android
         implementation deps.ktorClient.android
-        implementation deps.timber
       }
     }
     androidTest {

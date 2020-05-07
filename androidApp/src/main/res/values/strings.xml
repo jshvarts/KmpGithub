@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Kmp Github</string>
+    <string name="update_problem_message">Failed to get data from server. Check connection</string>
+    <string name="unknown_error">Unknown error</string>
 </resources>

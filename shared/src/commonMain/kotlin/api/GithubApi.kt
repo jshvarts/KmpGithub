@@ -7,7 +7,7 @@ import io.ktor.http.Url
 class GithubApi {
   private val client = HttpClient()
 
-  private val memberUrl = Url("http://api.github.com/orgs/squarespace/members")
+  private val memberUrl = Url("https://api.github.com/orgs/squarespace/members")
 
   suspend fun getMembers(): String {
     return client.get(memberUrl.toString())
