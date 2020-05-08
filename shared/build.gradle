@@ -85,7 +85,11 @@ kotlin {
       dependencies {
         implementation deps.coroutines.native
         implementation deps.ktorClient.ios
-        implementation deps.serialization.runtimeNative
+        implementation deps.ktorClient.coreNative
+        implementation deps.ktorClient.jsonNative
+        implementation deps.ktorClient.loggingNative
+        implementation deps.ktorClient.serializationNative
+        implementation deps.serialization.serializationRuntime
       }
     }
     iosTest {}
