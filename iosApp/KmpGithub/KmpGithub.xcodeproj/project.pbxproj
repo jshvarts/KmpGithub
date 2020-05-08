@@ -7,110 +7,102 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1ADBCB942462EC560053E33E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADBCB932462EC560053E33E /* AppDelegate.swift */; };
-		1ADBCB962462EC560053E33E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADBCB952462EC560053E33E /* SceneDelegate.swift */; };
-		1ADBCB982462EC560053E33E /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ADBCB972462EC560053E33E /* ContentView.swift */; };
-		1ADBCB9A2462EC570053E33E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADBCB992462EC570053E33E /* Assets.xcassets */; };
-		1ADBCB9D2462EC570053E33E /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ADBCB9C2462EC570053E33E /* Preview Assets.xcassets */; };
-		1ADBCBA02462EC570053E33E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1ADBCB9E2462EC570053E33E /* LaunchScreen.storyboard */; };
-		C2AD0994A8534F05F28101F2 /* libPods-KmpGithub.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0514569290FFE8A1AB47911F /* libPods-KmpGithub.a */; };
+		1A343C052464EEC8007D4592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A343C042464EEC8007D4592 /* AppDelegate.swift */; };
+		1A343C072464EEC8007D4592 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A343C062464EEC8007D4592 /* SceneDelegate.swift */; };
+		1A343C092464EEC8007D4592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A343C082464EEC8007D4592 /* ViewController.swift */; };
+		1A343C0C2464EEC8007D4592 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A343C0A2464EEC8007D4592 /* Main.storyboard */; };
+		1A343C0E2464EEC9007D4592 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1A343C0D2464EEC9007D4592 /* Assets.xcassets */; };
+		1A343C112464EEC9007D4592 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A343C0F2464EEC9007D4592 /* LaunchScreen.storyboard */; };
+		452471C252A263A77E12097B /* Pods_KmpGithub.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A7B146C0A3C8D251BB3B957D /* Pods_KmpGithub.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0514569290FFE8A1AB47911F /* libPods-KmpGithub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-KmpGithub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ADBCB902462EC560053E33E /* KmpGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KmpGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1ADBCB932462EC560053E33E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1ADBCB952462EC560053E33E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		1ADBCB972462EC560053E33E /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		1ADBCB992462EC570053E33E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		1ADBCB9C2462EC570053E33E /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1ADBCB9F2462EC570053E33E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		1ADBCBA12462EC570053E33E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		203AB536B873603E43986CAC /* Pods-KmpGithub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KmpGithub.debug.xcconfig"; path = "Target Support Files/Pods-KmpGithub/Pods-KmpGithub.debug.xcconfig"; sourceTree = "<group>"; };
-		774974EBB932BDCC28BB54CF /* Pods-KmpGithub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KmpGithub.release.xcconfig"; path = "Target Support Files/Pods-KmpGithub/Pods-KmpGithub.release.xcconfig"; sourceTree = "<group>"; };
+		1A343C012464EEC8007D4592 /* KmpGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KmpGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1A343C042464EEC8007D4592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1A343C062464EEC8007D4592 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1A343C082464EEC8007D4592 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1A343C0B2464EEC8007D4592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1A343C0D2464EEC9007D4592 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1A343C102464EEC9007D4592 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1A343C122464EEC9007D4592 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5E7AA26F454D2D6CD7258262 /* Pods-KmpGithub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KmpGithub.release.xcconfig"; path = "Target Support Files/Pods-KmpGithub/Pods-KmpGithub.release.xcconfig"; sourceTree = "<group>"; };
+		71BE473E93573A201192F4B0 /* Pods-KmpGithub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KmpGithub.debug.xcconfig"; path = "Target Support Files/Pods-KmpGithub/Pods-KmpGithub.debug.xcconfig"; sourceTree = "<group>"; };
+		A7B146C0A3C8D251BB3B957D /* Pods_KmpGithub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KmpGithub.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1ADBCB8D2462EC560053E33E /* Frameworks */ = {
+		1A343BFE2464EEC8007D4592 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C2AD0994A8534F05F28101F2 /* libPods-KmpGithub.a in Frameworks */,
+				452471C252A263A77E12097B /* Pods_KmpGithub.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1ADBCB872462EC560053E33E = {
+		1A343BF82464EEC8007D4592 = {
 			isa = PBXGroup;
 			children = (
-				1ADBCB922462EC560053E33E /* KmpGithub */,
-				1ADBCB912462EC560053E33E /* Products */,
-				6607BCFFA3FBA04701976028 /* Pods */,
-				53558A68D622A4289625D922 /* Frameworks */,
+				1A343C032464EEC8007D4592 /* KmpGithub */,
+				1A343C022464EEC8007D4592 /* Products */,
+				7DFCC7E9CCF8ECB435825722 /* Pods */,
+				9CD4F2C08BF28C45782C82B8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
-		1ADBCB912462EC560053E33E /* Products */ = {
+		1A343C022464EEC8007D4592 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1ADBCB902462EC560053E33E /* KmpGithub.app */,
+				1A343C012464EEC8007D4592 /* KmpGithub.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1ADBCB922462EC560053E33E /* KmpGithub */ = {
+		1A343C032464EEC8007D4592 /* KmpGithub */ = {
 			isa = PBXGroup;
 			children = (
-				1ADBCB932462EC560053E33E /* AppDelegate.swift */,
-				1ADBCB952462EC560053E33E /* SceneDelegate.swift */,
-				1ADBCB972462EC560053E33E /* ContentView.swift */,
-				1ADBCB992462EC570053E33E /* Assets.xcassets */,
-				1ADBCB9E2462EC570053E33E /* LaunchScreen.storyboard */,
-				1ADBCBA12462EC570053E33E /* Info.plist */,
-				1ADBCB9B2462EC570053E33E /* Preview Content */,
+				1A343C042464EEC8007D4592 /* AppDelegate.swift */,
+				1A343C062464EEC8007D4592 /* SceneDelegate.swift */,
+				1A343C082464EEC8007D4592 /* ViewController.swift */,
+				1A343C0A2464EEC8007D4592 /* Main.storyboard */,
+				1A343C0D2464EEC9007D4592 /* Assets.xcassets */,
+				1A343C0F2464EEC9007D4592 /* LaunchScreen.storyboard */,
+				1A343C122464EEC9007D4592 /* Info.plist */,
 			);
 			path = KmpGithub;
 			sourceTree = "<group>";
 		};
-		1ADBCB9B2462EC570053E33E /* Preview Content */ = {
+		7DFCC7E9CCF8ECB435825722 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				1ADBCB9C2462EC570053E33E /* Preview Assets.xcassets */,
-			);
-			path = "Preview Content";
-			sourceTree = "<group>";
-		};
-		53558A68D622A4289625D922 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				0514569290FFE8A1AB47911F /* libPods-KmpGithub.a */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		6607BCFFA3FBA04701976028 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				203AB536B873603E43986CAC /* Pods-KmpGithub.debug.xcconfig */,
-				774974EBB932BDCC28BB54CF /* Pods-KmpGithub.release.xcconfig */,
+				71BE473E93573A201192F4B0 /* Pods-KmpGithub.debug.xcconfig */,
+				5E7AA26F454D2D6CD7258262 /* Pods-KmpGithub.release.xcconfig */,
 			);
 			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		9CD4F2C08BF28C45782C82B8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A7B146C0A3C8D251BB3B957D /* Pods_KmpGithub.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1ADBCB8F2462EC560053E33E /* KmpGithub */ = {
+		1A343C002464EEC8007D4592 /* KmpGithub */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1ADBCBA42462EC570053E33E /* Build configuration list for PBXNativeTarget "KmpGithub" */;
+			buildConfigurationList = 1A343C152464EEC9007D4592 /* Build configuration list for PBXNativeTarget "KmpGithub" */;
 			buildPhases = (
-				EB32B8F68982356C7A1716EB /* [CP] Check Pods Manifest.lock */,
-				1ADBCB8C2462EC560053E33E /* Sources */,
-				1ADBCB8D2462EC560053E33E /* Frameworks */,
-				1ADBCB8E2462EC560053E33E /* Resources */,
+				75057D90261E85F8D19CE784 /* [CP] Check Pods Manifest.lock */,
+				1A343BFD2464EEC8007D4592 /* Sources */,
+				1A343BFE2464EEC8007D4592 /* Frameworks */,
+				1A343BFF2464EEC8007D4592 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -118,25 +110,25 @@
 			);
 			name = KmpGithub;
 			productName = KmpGithub;
-			productReference = 1ADBCB902462EC560053E33E /* KmpGithub.app */;
+			productReference = 1A343C012464EEC8007D4592 /* KmpGithub.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1ADBCB882462EC560053E33E /* Project object */ = {
+		1A343BF92464EEC8007D4592 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1140;
 				LastUpgradeCheck = 1140;
 				ORGANIZATIONNAME = "James Shvarts";
 				TargetAttributes = {
-					1ADBCB8F2462EC560053E33E = {
+					1A343C002464EEC8007D4592 = {
 						CreatedOnToolsVersion = 11.4;
 					};
 				};
 			};
-			buildConfigurationList = 1ADBCB8B2462EC560053E33E /* Build configuration list for PBXProject "KmpGithub" */;
+			buildConfigurationList = 1A343BFC2464EEC8007D4592 /* Build configuration list for PBXProject "KmpGithub" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -144,31 +136,31 @@
 				en,
 				Base,
 			);
-			mainGroup = 1ADBCB872462EC560053E33E;
-			productRefGroup = 1ADBCB912462EC560053E33E /* Products */;
+			mainGroup = 1A343BF82464EEC8007D4592;
+			productRefGroup = 1A343C022464EEC8007D4592 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1ADBCB8F2462EC560053E33E /* KmpGithub */,
+				1A343C002464EEC8007D4592 /* KmpGithub */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1ADBCB8E2462EC560053E33E /* Resources */ = {
+		1A343BFF2464EEC8007D4592 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ADBCBA02462EC570053E33E /* LaunchScreen.storyboard in Resources */,
-				1ADBCB9D2462EC570053E33E /* Preview Assets.xcassets in Resources */,
-				1ADBCB9A2462EC570053E33E /* Assets.xcassets in Resources */,
+				1A343C112464EEC9007D4592 /* LaunchScreen.storyboard in Resources */,
+				1A343C0E2464EEC9007D4592 /* Assets.xcassets in Resources */,
+				1A343C0C2464EEC8007D4592 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		EB32B8F68982356C7A1716EB /* [CP] Check Pods Manifest.lock */ = {
+		75057D90261E85F8D19CE784 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -193,23 +185,31 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1ADBCB8C2462EC560053E33E /* Sources */ = {
+		1A343BFD2464EEC8007D4592 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1ADBCB942462EC560053E33E /* AppDelegate.swift in Sources */,
-				1ADBCB962462EC560053E33E /* SceneDelegate.swift in Sources */,
-				1ADBCB982462EC560053E33E /* ContentView.swift in Sources */,
+				1A343C092464EEC8007D4592 /* ViewController.swift in Sources */,
+				1A343C052464EEC8007D4592 /* AppDelegate.swift in Sources */,
+				1A343C072464EEC8007D4592 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		1ADBCB9E2462EC570053E33E /* LaunchScreen.storyboard */ = {
+		1A343C0A2464EEC8007D4592 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1ADBCB9F2462EC570053E33E /* Base */,
+				1A343C0B2464EEC8007D4592 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1A343C0F2464EEC9007D4592 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1A343C102464EEC9007D4592 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -217,7 +217,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1ADBCBA22462EC570053E33E /* Debug */ = {
+		1A343C132464EEC9007D4592 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -277,7 +277,7 @@
 			};
 			name = Debug;
 		};
-		1ADBCBA32462EC570053E33E /* Release */ = {
+		1A343C142464EEC9007D4592 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -331,15 +331,13 @@
 			};
 			name = Release;
 		};
-		1ADBCBA52462EC570053E33E /* Debug */ = {
+		1A343C162464EEC9007D4592 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 203AB536B873603E43986CAC /* Pods-KmpGithub.debug.xcconfig */;
+			baseConfigurationReference = 71BE473E93573A201192F4B0 /* Pods-KmpGithub.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"KmpGithub/Preview Content\"";
 				DEVELOPMENT_TEAM = 7LTLFC6DFG;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = KmpGithub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -352,15 +350,13 @@
 			};
 			name = Debug;
 		};
-		1ADBCBA62462EC570053E33E /* Release */ = {
+		1A343C172464EEC9007D4592 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 774974EBB932BDCC28BB54CF /* Pods-KmpGithub.release.xcconfig */;
+			baseConfigurationReference = 5E7AA26F454D2D6CD7258262 /* Pods-KmpGithub.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_ASSET_PATHS = "\"KmpGithub/Preview Content\"";
 				DEVELOPMENT_TEAM = 7LTLFC6DFG;
-				ENABLE_PREVIEWS = YES;
 				INFOPLIST_FILE = KmpGithub/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -376,25 +372,25 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1ADBCB8B2462EC560053E33E /* Build configuration list for PBXProject "KmpGithub" */ = {
+		1A343BFC2464EEC8007D4592 /* Build configuration list for PBXProject "KmpGithub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1ADBCBA22462EC570053E33E /* Debug */,
-				1ADBCBA32462EC570053E33E /* Release */,
+				1A343C132464EEC9007D4592 /* Debug */,
+				1A343C142464EEC9007D4592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1ADBCBA42462EC570053E33E /* Build configuration list for PBXNativeTarget "KmpGithub" */ = {
+		1A343C152464EEC9007D4592 /* Build configuration list for PBXNativeTarget "KmpGithub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1ADBCBA52462EC570053E33E /* Debug */,
-				1ADBCBA62462EC570053E33E /* Release */,
+				1A343C162464EEC9007D4592 /* Debug */,
+				1A343C172464EEC9007D4592 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1ADBCB882462EC560053E33E /* Project object */;
+	rootObject = 1A343BF92464EEC8007D4592 /* Project object */;
 }

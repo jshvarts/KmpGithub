@@ -20,11 +20,13 @@
 /* End PBXAggregateTarget section */
 
 /* Begin PBXBuildFile section */
-		6D4984EA92146884397BAD389507CE48 /* Pods-KmpGithub-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E0977697CDE1BB652DC1B2FBBDC3F8FB /* Pods-KmpGithub-dummy.m */; };
+		573B34C2EBC157C21D040C538C36A86E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		72F7B7AA9362196579AF215384F4785E /* Pods-KmpGithub-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F20FB01D783B17A484464A08BB89EF79 /* Pods-KmpGithub-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8B683589EFCBD6762FD383E425D17B53 /* Pods-KmpGithub-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D7C5A79D23F9B9D9124E799D89A11159 /* Pods-KmpGithub-dummy.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		07A281B8D25B1B23FC6F3963CF57F290 /* PBXContainerItemProxy */ = {
+		469D1E118E67ACF28F19D3A7A9A2C512 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
@@ -35,35 +37,48 @@
 
 /* Begin PBXFileReference section */
 		0327E354D02154A90655E4E0FBCFD636 /* shared.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.release.xcconfig; sourceTree = "<group>"; };
-		23C84FFAC642241BD4A7045F3BDADF52 /* Pods-KmpGithub-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KmpGithub-acknowledgements.plist"; sourceTree = "<group>"; };
+		1FDA12ED628F24F43DD9D8BB489D0CB5 /* Pods-KmpGithub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KmpGithub.release.xcconfig"; sourceTree = "<group>"; };
 		2C993B182786F7376F9640D6FD71FA53 /* shared.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = shared.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		47584BD71792C46A8F6A3D447AFAECF1 /* Pods-KmpGithub.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KmpGithub.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		5349A7EF9F679BB41B1EF6F4D6AC3411 /* shared.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = shared.framework; path = build/cocoapods/framework/shared.framework; sourceTree = "<group>"; };
 		5DF60867886AA21D4A72F93CFDA2CE01 /* shared.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = shared.debug.xcconfig; sourceTree = "<group>"; };
+		6B4DE42DA1DFC7A1694003A636F651C7 /* Pods-KmpGithub-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KmpGithub-Info.plist"; sourceTree = "<group>"; };
+		731D28C48795A3ADCEEA684E86F23F35 /* Pods-KmpGithub.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KmpGithub.modulemap"; sourceTree = "<group>"; };
+		9458ADCB504A06A36A9506EFAD262433 /* Pods-KmpGithub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KmpGithub.debug.xcconfig"; sourceTree = "<group>"; };
 		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A32EF61173A63A920DC86777F907357B /* Pods-KmpGithub-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KmpGithub-acknowledgements.markdown"; sourceTree = "<group>"; };
-		AC388E1AFEB5E1DA481BA683452DEE48 /* libPods-KmpGithub.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; name = "libPods-KmpGithub.a"; path = "libPods-KmpGithub.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB7B790B260B18400C2D037C2B8584AC /* Pods-KmpGithub.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KmpGithub.debug.xcconfig"; sourceTree = "<group>"; };
-		E0977697CDE1BB652DC1B2FBBDC3F8FB /* Pods-KmpGithub-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KmpGithub-dummy.m"; sourceTree = "<group>"; };
+		AC388E1AFEB5E1DA481BA683452DEE48 /* Pods_KmpGithub.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KmpGithub.framework; path = "Pods-KmpGithub.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B5A4F834A3ED91230F052D6D6BAEAB13 /* Pods-KmpGithub-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KmpGithub-acknowledgements.markdown"; sourceTree = "<group>"; };
+		CE404262957EBB38C872A3AD23A5FE87 /* Pods-KmpGithub-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KmpGithub-acknowledgements.plist"; sourceTree = "<group>"; };
+		D7C5A79D23F9B9D9124E799D89A11159 /* Pods-KmpGithub-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KmpGithub-dummy.m"; sourceTree = "<group>"; };
+		F20FB01D783B17A484464A08BB89EF79 /* Pods-KmpGithub-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KmpGithub-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		3EADCDCD2A63992449236AD3213A1C50 /* Frameworks */ = {
+		EEDE6B7561E38C55AE99ABC0ABB5C7C4 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				573B34C2EBC157C21D040C538C36A86E /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3E98DC50EB986905F7A6B9C97E1875D2 /* Targets Support Files */ = {
+		4D280FC103E7E78E65BF9618E38AAAB2 /* Pods-KmpGithub */ = {
 			isa = PBXGroup;
 			children = (
-				F63D16138039B56FA02CEA9622B07E67 /* Pods-KmpGithub */,
+				731D28C48795A3ADCEEA684E86F23F35 /* Pods-KmpGithub.modulemap */,
+				B5A4F834A3ED91230F052D6D6BAEAB13 /* Pods-KmpGithub-acknowledgements.markdown */,
+				CE404262957EBB38C872A3AD23A5FE87 /* Pods-KmpGithub-acknowledgements.plist */,
+				D7C5A79D23F9B9D9124E799D89A11159 /* Pods-KmpGithub-dummy.m */,
+				6B4DE42DA1DFC7A1694003A636F651C7 /* Pods-KmpGithub-Info.plist */,
+				F20FB01D783B17A484464A08BB89EF79 /* Pods-KmpGithub-umbrella.h */,
+				9458ADCB504A06A36A9506EFAD262433 /* Pods-KmpGithub.debug.xcconfig */,
+				1FDA12ED628F24F43DD9D8BB489D0CB5 /* Pods-KmpGithub.release.xcconfig */,
 			);
-			name = "Targets Support Files";
+			name = "Pods-KmpGithub";
+			path = "Target Support Files/Pods-KmpGithub";
 			sourceTree = "<group>";
 		};
 		70A0303F701472B66DAD12F216EEE4E6 /* Frameworks */ = {
@@ -93,6 +108,14 @@
 			path = ../../../shared;
 			sourceTree = "<group>";
 		};
+		864B3E8DF284BC18E303E04DC6C4169D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AC388E1AFEB5E1DA481BA683452DEE48 /* Pods_KmpGithub.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C06220AC3DF245275A2793BCE3FD3424 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
@@ -101,20 +124,29 @@
 			name = Pod;
 			sourceTree = "<group>";
 		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
 		CF1408CF629C7361332E53B88F7BD30C = {
 			isa = PBXGroup;
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				72856161601E91BE9F489FB0E9AA390F /* Development Pods */,
-				D89477F20FB1DE18A04690586D7808C4 /* Frameworks */,
-				DF90DA6CA148E4BE089F6737B6677EA8 /* Products */,
-				3E98DC50EB986905F7A6B9C97E1875D2 /* Targets Support Files */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				864B3E8DF284BC18E303E04DC6C4169D /* Products */,
+				EFAD71C3700329B6E1EADA52A218C24A /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D89477F20FB1DE18A04690586D7808C4 /* Frameworks */ = {
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -129,34 +161,22 @@
 			path = "../iosApp/KmpGithub/Pods/Target Support Files/shared";
 			sourceTree = "<group>";
 		};
-		DF90DA6CA148E4BE089F6737B6677EA8 /* Products */ = {
+		EFAD71C3700329B6E1EADA52A218C24A /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				AC388E1AFEB5E1DA481BA683452DEE48 /* libPods-KmpGithub.a */,
+				4D280FC103E7E78E65BF9618E38AAAB2 /* Pods-KmpGithub */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		F63D16138039B56FA02CEA9622B07E67 /* Pods-KmpGithub */ = {
-			isa = PBXGroup;
-			children = (
-				A32EF61173A63A920DC86777F907357B /* Pods-KmpGithub-acknowledgements.markdown */,
-				23C84FFAC642241BD4A7045F3BDADF52 /* Pods-KmpGithub-acknowledgements.plist */,
-				E0977697CDE1BB652DC1B2FBBDC3F8FB /* Pods-KmpGithub-dummy.m */,
-				CB7B790B260B18400C2D037C2B8584AC /* Pods-KmpGithub.debug.xcconfig */,
-				47584BD71792C46A8F6A3D447AFAECF1 /* Pods-KmpGithub.release.xcconfig */,
-			);
-			name = "Pods-KmpGithub";
-			path = "Target Support Files/Pods-KmpGithub";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		E0781DBB2FF5837B9DB648024366FE2F /* Headers */ = {
+		538F5DE409206C0AD8224C70FDD9502E /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72F7B7AA9362196579AF215384F4785E /* Pods-KmpGithub-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -165,21 +185,22 @@
 /* Begin PBXNativeTarget section */
 		9E33811DFC1A3CF140DA6740BB530BCE /* Pods-KmpGithub */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = D5D849661D4859DCE920AE9A38869703 /* Build configuration list for PBXNativeTarget "Pods-KmpGithub" */;
+			buildConfigurationList = A7B195B26C588DFFB3B158A8FCAEC666 /* Build configuration list for PBXNativeTarget "Pods-KmpGithub" */;
 			buildPhases = (
-				E0781DBB2FF5837B9DB648024366FE2F /* Headers */,
-				69E13B5BE19055B0C2797F55E76002BE /* Sources */,
-				3EADCDCD2A63992449236AD3213A1C50 /* Frameworks */,
+				538F5DE409206C0AD8224C70FDD9502E /* Headers */,
+				43AABD65608068D9839500C9145B95A1 /* Sources */,
+				EEDE6B7561E38C55AE99ABC0ABB5C7C4 /* Frameworks */,
+				DF86B2FC8CEBB95439BAE3D0018BFAAF /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				C543891F0F9A1E19D503207A484E074A /* PBXTargetDependency */,
+				19A58765315C76D28020DCCE40009370 /* PBXTargetDependency */,
 			);
 			name = "Pods-KmpGithub";
 			productName = "Pods-KmpGithub";
-			productReference = AC388E1AFEB5E1DA481BA683452DEE48 /* libPods-KmpGithub.a */;
-			productType = "com.apple.product-type.library.static";
+			productReference = AC388E1AFEB5E1DA481BA683452DEE48 /* Pods_KmpGithub.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -199,7 +220,7 @@
 				Base,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = DF90DA6CA148E4BE089F6737B6677EA8 /* Products */;
+			productRefGroup = 864B3E8DF284BC18E303E04DC6C4169D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
@@ -208,6 +229,16 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DF86B2FC8CEBB95439BAE3D0018BFAAF /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
 		F2F266D90E96E94E3FEEA4EF908A1753 /* [CP-User] Build shared */ = {
@@ -223,65 +254,26 @@
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		69E13B5BE19055B0C2797F55E76002BE /* Sources */ = {
+		43AABD65608068D9839500C9145B95A1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D4984EA92146884397BAD389507CE48 /* Pods-KmpGithub-dummy.m in Sources */,
+				8B683589EFCBD6762FD383E425D17B53 /* Pods-KmpGithub-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		C543891F0F9A1E19D503207A484E074A /* PBXTargetDependency */ = {
+		19A58765315C76D28020DCCE40009370 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = shared;
 			target = 8777C9F6889E59EFFD631D80AEE9048B /* shared */;
-			targetProxy = 07A281B8D25B1B23FC6F3963CF57F290 /* PBXContainerItemProxy */;
+			targetProxy = 469D1E118E67ACF28F19D3A7A9A2C512 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		0AD11BDB8C5BC97633043F7F1D67D8B6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 5DF60867886AA21D4A72F93CFDA2CE01 /* shared.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				SDKROOT = iphoneos;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		62B5B45FA15988136EC98FC62C49B177 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = CB7B790B260B18400C2D037C2B8584AC /* Pods-KmpGithub.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		6C61D818ACD3C2C116FED6A9C67E91B4 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -406,37 +398,13 @@
 			};
 			name = Release;
 		};
-		8116C8374BFA857C3529CD46425DF0D0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 47584BD71792C46A8F6A3D447AFAECF1 /* Pods-KmpGithub.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
-				MACH_O_TYPE = staticlib;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		FF47CF9CA6520C190895C069960949C9 /* Release */ = {
+		D192F552411DD9B20BF98D27BFD82ABA /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 0327E354D02154A90655E4E0FBCFD636 /* shared.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_OBJC_WEAK = NO;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -446,6 +414,99 @@
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
+		};
+		D1BC59FC7E66E62A6447A540AFE737B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1FDA12ED628F24F43DD9D8BB489D0CB5 /* Pods-KmpGithub.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KmpGithub/Pods-KmpGithub-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KmpGithub/Pods-KmpGithub.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E8BAA37E45ABE715D95BC2AB78A9D16E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9458ADCB504A06A36A9506EFAD262433 /* Pods-KmpGithub.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-KmpGithub/Pods-KmpGithub-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-KmpGithub/Pods-KmpGithub.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		FFF3F70E4970831711F2697560064EF4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DF60867886AA21D4A72F93CFDA2CE01 /* shared.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
 		};
 /* End XCBuildConfiguration section */
 
@@ -459,20 +520,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		C12F82084A1D789106266CAAF7274FD2 /* Build configuration list for PBXAggregateTarget "shared" */ = {
+		A7B195B26C588DFFB3B158A8FCAEC666 /* Build configuration list for PBXNativeTarget "Pods-KmpGithub" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				0AD11BDB8C5BC97633043F7F1D67D8B6 /* Debug */,
-				FF47CF9CA6520C190895C069960949C9 /* Release */,
+				E8BAA37E45ABE715D95BC2AB78A9D16E /* Debug */,
+				D1BC59FC7E66E62A6447A540AFE737B9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		D5D849661D4859DCE920AE9A38869703 /* Build configuration list for PBXNativeTarget "Pods-KmpGithub" */ = {
+		C12F82084A1D789106266CAAF7274FD2 /* Build configuration list for PBXAggregateTarget "shared" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				62B5B45FA15988136EC98FC62C49B177 /* Debug */,
-				8116C8374BFA857C3529CD46425DF0D0 /* Release */,
+				FFF3F70E4970831711F2697560064EF4 /* Debug */,
+				D192F552411DD9B20BF98D27BFD82ABA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
