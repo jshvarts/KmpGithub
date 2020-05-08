@@ -7,6 +7,7 @@ import androidx.appcompat.app.AppCompatActivity
 import com.jshvarts.kmp.R.string
 import com.jshvarts.kmp.shared.api.UpdateDataException
 import com.jshvarts.kmp.shared.createPlatformMessage
+import com.jshvarts.kmp.shared.model.Member
 import com.jshvarts.kmp.shared.presentation.MembersPresenter
 import com.jshvarts.kmp.shared.presentation.MembersView
 
@@ -35,9 +36,9 @@ class MainActivity : AppCompatActivity(), MembersView {
 
   override var isUpdating = false
 
-  override fun onUpdate(members: String) {
+  override fun onUpdate(members: List<Member>) {
     runOnUiThread {
-      Toast.makeText(this, members, Toast.LENGTH_LONG).show()
+      Toast.makeText(this, members.toString(), Toast.LENGTH_LONG).show()
     }
   }
 

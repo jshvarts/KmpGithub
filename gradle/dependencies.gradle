@@ -17,14 +17,30 @@ buildscript {
           'core': 'com.google.android.material:material:1.0.0'
       ],
       'ktorClient': [
+          'serialization': 'io.ktor:ktor-serialization:1.3.2',
+          'clientSerialization': 'io.ktor:ktor-client-serialization:1.3.2',
           'core': 'io.ktor:ktor-client-core:1.3.2',
+          'coreJvm': 'io.ktor:ktor-client-core-jvm:1.3.2',
+          'jsonJvm': 'io.ktor:ktor-client-json-jvm:1.3.2',
+          'serializationJvm': 'io.ktor:ktor-client-serialization-jvm:1.3.2',
           'android': 'io.ktor:ktor-client-android:1.3.2',
           'ios': 'io.ktor:ktor-client-ios:1.3.2',
+          'jsonCommon': 'io.ktor:ktor-client-json:1.3.2',
+          'jsonJvm': 'ktor-client-json-jvm:1.3.2',
+          'jsonNative': 'ktor-client-json-native:1.3.2',
+          'logging': 'io.ktor:ktor-client-logging:1.3.2',
+          'loggingJvm': 'io.ktor:ktor-client-logging-jvm:1.3.2'
       ],
       'coroutines': [
           'coreCommon': 'org.jetbrains.kotlinx:kotlinx-coroutines-core-common:1.3.5',
           'android': 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.3.5',
-          'ios': 'org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5',
+          'native': 'org.jetbrains.kotlinx:kotlinx-coroutines-core-native:1.3.5',
+      ],
+      'serialization': [
+          'runtimeCommon': 'org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:0.20.0',
+          'runtimeJvm': 'org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0',
+          'runtimeNative': 'org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:0.20.0',
+          'serializationRuntime': 'org.jetbrains.kotlinx:kotlinx-serialization-runtime:0.20.0',
       ],
       'junit': 'junit:junit:4.12',
       'truth': 'com.google.truth:truth:0.40',
