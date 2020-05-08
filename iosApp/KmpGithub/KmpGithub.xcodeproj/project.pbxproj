@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1A0FF91A2464F1B1008D8098 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FF9192464F1B1008D8098 /* BaseView.swift */; };
 		1A343C052464EEC8007D4592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A343C042464EEC8007D4592 /* AppDelegate.swift */; };
 		1A343C072464EEC8007D4592 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A343C062464EEC8007D4592 /* SceneDelegate.swift */; };
 		1A343C092464EEC8007D4592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A343C082464EEC8007D4592 /* ViewController.swift */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1A0FF9192464F1B1008D8098 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
 		1A343C012464EEC8007D4592 /* KmpGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KmpGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A343C042464EEC8007D4592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A343C062464EEC8007D4592 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -70,6 +72,7 @@
 				1A343C0D2464EEC9007D4592 /* Assets.xcassets */,
 				1A343C0F2464EEC9007D4592 /* LaunchScreen.storyboard */,
 				1A343C122464EEC9007D4592 /* Info.plist */,
+				1A0FF9192464F1B1008D8098 /* BaseView.swift */,
 			);
 			path = KmpGithub;
 			sourceTree = "<group>";
@@ -80,7 +83,6 @@
 				71BE473E93573A201192F4B0 /* Pods-KmpGithub.debug.xcconfig */,
 				5E7AA26F454D2D6CD7258262 /* Pods-KmpGithub.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -192,6 +194,7 @@
 				1A343C092464EEC8007D4592 /* ViewController.swift in Sources */,
 				1A343C052464EEC8007D4592 /* AppDelegate.swift in Sources */,
 				1A343C072464EEC8007D4592 /* SceneDelegate.swift in Sources */,
+				1A0FF91A2464F1B1008D8098 /* BaseView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

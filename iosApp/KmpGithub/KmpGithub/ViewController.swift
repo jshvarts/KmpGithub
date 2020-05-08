@@ -9,9 +9,27 @@
 import UIKit
 import shared
 
-class ViewController: UIViewController {
-
+class ViewController: UIViewController, MembersView {
+  lazy var presenter: MembersPresenter = {
+    MembersPresenter(view: self, repository: AppDelegate.appDelegate.dataRepository)
+  }()
+  
   @IBOutlet weak var platformName: UILabel!
+  
+  // TODO: handle loading UI
+  var isUpdating = false
+  
+  func onUpdate(members: String) {
+    print(members)
+  }
+  
+  override func viewWillAppear(_ animated: Bool) {
+    presenter.onCreate()
+  }
+  
+  override func viewWillDisappear(_ animated: Bool) {
+    presenter.onDestroy()
+  }
   
   override func viewDidLoad() {
     super.viewDidLoad()
