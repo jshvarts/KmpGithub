@@ -23,7 +23,6 @@ kotlin {
         compilations.main.kotlinOptions.freeCompilerArgs += "-Xobjc-generics"
         framework("shared") {
           isStatic = false
-          linkerOpts.add("-lsqlite3")
 
           // Disable bitcode embedding for the simulator build.
           if (!buildForDevice) {
@@ -65,14 +64,13 @@ kotlin {
         implementation kotlin('stdlib')
         implementation deps.androidx.appCompat
         implementation deps.androidx.preferences
-        implementation deps.coroutines.android
+        implementation deps.coroutines.coreJvm
         implementation deps.ktorClient.android
         implementation deps.ktorClient.coreJvm
-        implementation deps.ktorClient.serializationJvm
-        implementation deps.serialization.serializationRuntime
-        implementation deps.serialization.runtimeJvm
+        implementation deps.ktorClient.jsonJvm
         implementation deps.ktorClient.loggingJvm
-        implementation deps.ktorClient.serialization
+        implementation deps.ktorClient.serializationJvm
+        implementation deps.serialization.runtimeJvm
       }
     }
     androidTest {
@@ -85,7 +83,11 @@ kotlin {
       dependencies {
         implementation deps.coroutines.native
         implementation deps.ktorClient.ios
-        implementation deps.serialization.runtimeNative
+        implementation deps.ktorClient.coreNative
+        implementation deps.ktorClient.jsonNative
+        implementation deps.ktorClient.loggingNative
+        implementation deps.ktorClient.serializationNative
+        implementation deps.serialization.serializationRuntime
       }
     }
     iosTest {}

@@ -12,7 +12,7 @@ class MembersDataRepository(private val api: GithubApi) : DataRepository {
     val newMembers = try {
       api.getMembers()
     } catch (t: Throwable) {
-      println("Unable to get members $t")
+      println("Unable to get members ${t.cause}")
       throw UpdateDataException()
     }
 
