@@ -58,3 +58,5 @@ playground.xcworkspace
 
 buildboth.sh
 
+**/UserInterfaceState.xcuserstate
+
