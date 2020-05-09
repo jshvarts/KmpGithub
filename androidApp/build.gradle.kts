@@ -1,6 +1,7 @@
 plugins {
   id("com.android.application")
   kotlin("android")
+  kotlin("android.extensions")
 }
 
 android {
@@ -17,9 +18,9 @@ android {
   }
 
   buildTypes {
-    named("release") {
+    getByName("release") {
       isMinifyEnabled = false
-      proguardFiles(getDefaultProguardFile("proguard-android-optimize.txt"), "proguard-rules.pro")
+      proguardFiles(getDefaultProguardFile("proguard-android.txt"), "proguard-rules.pro")
     }
   }
 
@@ -30,11 +31,14 @@ android {
 
 dependencies {
   implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
-  implementation("org.jetbrains.kotlin:kotlin-stdlib-jdk7:${Versions.kotlin}")
+  implementation(kotlin("stdlib-jdk7", Versions.kotlin))
   implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}")
-  implementation("androidx.appcompat:appcompat:${AndroidX.appCompatVersion}")
-  implementation("com.google.android.material:material:${AndroidX.materialVersion}")
+  implementation("androidx.appcompat:appcompat:${AndroidX.appCompat}")
+  implementation("androidx.constraintlayout:constraintlayout:${AndroidX.constraintLayout}")
+  implementation("androidx.recyclerview:recyclerview:${AndroidX.recyclerView}")
+  implementation("com.google.android.material:material:${AndroidX.material}")
   implementation("com.jakewharton.timber:timber:${Versions.timberAndroid}")
+  implementation("com.squareup.picasso:picasso:${Versions.picasso}")
 
   implementation(project(":shared"))
 }
