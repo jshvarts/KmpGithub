@@ -9,7 +9,6 @@ import io.ktor.client.features.logging.LogLevel
 import io.ktor.client.features.logging.Logger
 import io.ktor.client.features.logging.Logging
 import io.ktor.client.request.get
-import kotlinx.serialization.UnstableDefault
 import kotlinx.serialization.json.Json
 import kotlinx.serialization.json.JsonConfiguration
 
@@ -33,6 +32,5 @@ class GithubApi {
     }
   }
 
-  @OptIn(UnstableDefault::class)
   suspend fun getMembers(): List<Member> = client.get(memberUrl)
 }

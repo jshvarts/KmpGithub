@@ -11,7 +11,7 @@ import shared
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-  public lazy var dataRepository = { MembersDataRepository(api: GithubApi()) }()
+  public lazy var dataRepository = { MembersRepositoryImpl(api: GithubApi()) }()
   
   var window: UIWindow?
   

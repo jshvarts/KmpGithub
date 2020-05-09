@@ -1,12 +1,12 @@
 package com.jshvarts.kmp.shared.presentation
 
 import com.jshvarts.kmp.shared.ApplicationDispatcher
-import com.jshvarts.kmp.shared.model.DataRepository
+import com.jshvarts.kmp.shared.model.MembersRepository
 import kotlinx.coroutines.launch
 
 class MembersPresenter(
   private val view: MembersView,
-  private val repository: DataRepository
+  private val repository: MembersRepository
 ) : CoroutinePresenter(ApplicationDispatcher, view) {
 
   private val onRefreshListener: () -> Unit = this::showData

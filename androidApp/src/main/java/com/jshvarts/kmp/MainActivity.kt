@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.activity_main.platformMessage
 
 class MainActivity : AppCompatActivity(), MembersView {
   private val repository by lazy {
-    (application as KmpGithubApplication).dataRepository
+    (application as KmpGithubApplication).membersRepository
   }
 
   private val presenter by lazy {

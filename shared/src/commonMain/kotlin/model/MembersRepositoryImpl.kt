@@ -3,7 +3,7 @@ package com.jshvarts.kmp.shared.model
 import com.jshvarts.kmp.shared.api.GithubApi
 import com.jshvarts.kmp.shared.api.UpdateDataException
 
-class MembersDataRepository(private val api: GithubApi) : DataRepository {
+class MembersRepositoryImpl(private val api: GithubApi) : MembersRepository {
   override var members: List<Member>? = null
 
   override var onRefreshListeners: List<() -> Unit> = emptyList()

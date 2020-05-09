@@ -1,6 +1,6 @@
 package com.jshvarts.kmp.shared.model
 
-interface DataRepository {
+interface MembersRepository {
   var members: List<Member>?
   var onRefreshListeners: List<() -> Unit>
 
