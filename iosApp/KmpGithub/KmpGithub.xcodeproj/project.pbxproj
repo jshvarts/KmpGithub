@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		1A0FF91A2464F1B1008D8098 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A0FF9192464F1B1008D8098 /* BaseView.swift */; };
+		1A2E10F924673A7E00D1B3BB /* MemberList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2E10F824673A7E00D1B3BB /* MemberList.swift */; };
+		1A2E10FB24673B8200D1B3BB /* MemberCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A2E10FA24673B8200D1B3BB /* MemberCellTableViewCell.swift */; };
+		1A2E10FD24673BD900D1B3BB /* MemberCellTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1A2E10FC24673BD900D1B3BB /* MemberCellTableViewCell.xib */; };
 		1A343C052464EEC8007D4592 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A343C042464EEC8007D4592 /* AppDelegate.swift */; };
 		1A343C072464EEC8007D4592 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A343C062464EEC8007D4592 /* SceneDelegate.swift */; };
 		1A343C092464EEC8007D4592 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A343C082464EEC8007D4592 /* ViewController.swift */; };
@@ -19,6 +22,9 @@
 
 /* Begin PBXFileReference section */
 		1A0FF9192464F1B1008D8098 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		1A2E10F824673A7E00D1B3BB /* MemberList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberList.swift; sourceTree = "<group>"; };
+		1A2E10FA24673B8200D1B3BB /* MemberCellTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberCellTableViewCell.swift; sourceTree = "<group>"; };
+		1A2E10FC24673BD900D1B3BB /* MemberCellTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemberCellTableViewCell.xib; sourceTree = "<group>"; };
 		1A343C012464EEC8007D4592 /* KmpGithub.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KmpGithub.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A343C042464EEC8007D4592 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1A343C062464EEC8007D4592 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -73,6 +79,9 @@
 				1A343C0F2464EEC9007D4592 /* LaunchScreen.storyboard */,
 				1A343C122464EEC9007D4592 /* Info.plist */,
 				1A0FF9192464F1B1008D8098 /* BaseView.swift */,
+				1A2E10F824673A7E00D1B3BB /* MemberList.swift */,
+				1A2E10FA24673B8200D1B3BB /* MemberCellTableViewCell.swift */,
+				1A2E10FC24673BD900D1B3BB /* MemberCellTableViewCell.xib */,
 			);
 			path = KmpGithub;
 			sourceTree = "<group>";
@@ -156,6 +165,7 @@
 				1A343C112464EEC9007D4592 /* LaunchScreen.storyboard in Resources */,
 				1A343C0E2464EEC9007D4592 /* Assets.xcassets in Resources */,
 				1A343C0C2464EEC8007D4592 /* Main.storyboard in Resources */,
+				1A2E10FD24673BD900D1B3BB /* MemberCellTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -192,6 +202,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1A343C092464EEC8007D4592 /* ViewController.swift in Sources */,
+				1A2E10FB24673B8200D1B3BB /* MemberCellTableViewCell.swift in Sources */,
+				1A2E10F924673A7E00D1B3BB /* MemberList.swift in Sources */,
 				1A343C052464EEC8007D4592 /* AppDelegate.swift in Sources */,
 				1A343C072464EEC8007D4592 /* SceneDelegate.swift in Sources */,
 				1A0FF91A2464F1B1008D8098 /* BaseView.swift in Sources */,

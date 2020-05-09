@@ -15,27 +15,39 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6J-R3-WVd">
-                                <rect key="frame" x="186" y="442.5" width="42" height="21"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Platform Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c6J-R3-WVd">
+                                <rect key="frame" x="150" y="825" width="114.5" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Cgh-vt-lHH">
+                                <rect key="frame" x="0.0" y="44" width="414" height="765"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="Ywb-4x-zsK"/>
+                                </connections>
+                            </tableView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="c6J-R3-WVd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="5kC-Wj-dAF"/>
-                            <constraint firstItem="c6J-R3-WVd" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="UhY-Si-Z6n"/>
+                            <constraint firstItem="Cgh-vt-lHH" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="9Ad-1p-u5T"/>
+                            <constraint firstItem="c6J-R3-WVd" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Ncc-9p-7QU"/>
+                            <constraint firstItem="Cgh-vt-lHH" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Td6-dg-c6i"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="c6J-R3-WVd" secondAttribute="bottom" constant="16" id="Wd7-j7-594"/>
+                            <constraint firstItem="Cgh-vt-lHH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jfn-lO-izA"/>
+                            <constraint firstItem="c6J-R3-WVd" firstAttribute="top" secondItem="Cgh-vt-lHH" secondAttribute="bottom" constant="16" id="zaQ-4k-mE5"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
+                        <outlet property="membersTableView" destination="Cgh-vt-lHH" id="WX0-Zr-JkA"/>
                         <outlet property="platformName" destination="c6J-R3-WVd" id="ofk-Zm-ATP"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="139" y="136"/>
+            <point key="canvasLocation" x="137.68115942028987" y="135.9375"/>
         </scene>
     </scenes>
 </document>
