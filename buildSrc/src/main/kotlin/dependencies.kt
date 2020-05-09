@@ -3,6 +3,7 @@ object Versions {
   const val compileSdk = 29
   const val targetSdk = 29
   const val androidBuildTools = "29.0.2"
+  const val picasso = "2.71828"
   const val kotlin = "1.3.72"
   const val ktor = "1.3.2"
   const val serialization = "0.20.0"
@@ -11,8 +12,10 @@ object Versions {
 }
 
 object AndroidX {
-  const val appCompatVersion = "1.0.2"
-  const val materialVersion = "1.2.0-alpha05"
+  const val appCompat = "1.0.2"
+  const val constraintLayout = "1.1.3"
+  const val material = "1.2.0-alpha05"
+  const val recyclerView = "1.1.0"
 }
 
 object Coroutines {

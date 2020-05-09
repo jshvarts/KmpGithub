@@ -1,15 +1,18 @@
 package com.jshvarts.kmp
 
 import android.os.Bundle
-import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.jshvarts.kmp.R.layout
 import com.jshvarts.kmp.R.string
 import com.jshvarts.kmp.shared.api.UpdateDataException
 import com.jshvarts.kmp.shared.createPlatformMessage
 import com.jshvarts.kmp.shared.model.Member
 import com.jshvarts.kmp.shared.presentation.MembersPresenter
 import com.jshvarts.kmp.shared.presentation.MembersView
+import kotlinx.android.synthetic.main.activity_main.membersRecyclerView
+import kotlinx.android.synthetic.main.activity_main.platformMessage
 
 class MainActivity : AppCompatActivity(), MembersView {
   private val repository by lazy {
@@ -20,11 +23,15 @@ class MainActivity : AppCompatActivity(), MembersView {
     MembersPresenter(this, repository)
   }
 
+  private lateinit var adapter: MemberAdapter
+
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
-    setContentView(R.layout.activity_main)
+    setContentView(layout.activity_main)
 
-    findViewById<TextView>(R.id.main_text).text = createPlatformMessage()
+    platformMessage.text = createPlatformMessage()
+
+    setupRecyclerView()
 
     presenter.onCreate()
   }
@@ -37,8 +44,10 @@ class MainActivity : AppCompatActivity(), MembersView {
   override var isUpdating = false
 
   override fun onUpdate(members: List<Member>) {
+    adapter.members = members
+
     runOnUiThread {
-      Toast.makeText(this, members.toString(), Toast.LENGTH_LONG).show()
+      adapter.notifyDataSetChanged()
     }
   }
 
@@ -50,5 +59,11 @@ class MainActivity : AppCompatActivity(), MembersView {
     runOnUiThread {
       Toast.makeText(this, errorMessage, Toast.LENGTH_LONG).show()
     }
+  }
+
+  private fun setupRecyclerView() {
+    membersRecyclerView.layoutManager = LinearLayoutManager(this)
+    adapter = MemberAdapter(emptyList())
+    membersRecyclerView.adapter = adapter
   }
 }
