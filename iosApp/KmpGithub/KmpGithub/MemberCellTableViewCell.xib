@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16086"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="MemberCell" rowHeight="80" id="IkB-9Y-K8m" customClass="MemberCellTableViewCell" customModule="KmpGithub" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="IkB-9Y-K8m" id="YNK-nf-F0M">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mP4-fI-60q">
+                        <rect key="frame" x="0.0" y="0.0" width="80" height="80"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="80" id="A5W-hi-JKq"/>
+                            <constraint firstAttribute="width" constant="80" id="R0C-p4-pI9"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ola-kY-04f">
+                        <rect key="frame" x="96" y="16" width="302" height="48"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mP4-fI-60q" firstAttribute="leading" secondItem="YNK-nf-F0M" secondAttribute="leading" id="7mP-2G-iKO"/>
+                    <constraint firstItem="mP4-fI-60q" firstAttribute="top" secondItem="YNK-nf-F0M" secondAttribute="top" id="A9D-fl-hmV"/>
+                    <constraint firstAttribute="trailing" secondItem="ola-kY-04f" secondAttribute="trailing" constant="16" id="OgY-fL-fBU"/>
+                    <constraint firstItem="ola-kY-04f" firstAttribute="leading" secondItem="mP4-fI-60q" secondAttribute="trailing" constant="16" id="Q2D-Gc-gu6"/>
+                    <constraint firstAttribute="bottom" secondItem="ola-kY-04f" secondAttribute="bottom" constant="16" id="Vgr-32-GJ9"/>
+                    <constraint firstItem="ola-kY-04f" firstAttribute="top" secondItem="YNK-nf-F0M" secondAttribute="top" constant="16" id="e6r-it-Qmg"/>
+                    <constraint firstAttribute="bottom" secondItem="mP4-fI-60q" secondAttribute="bottom" id="wkb-0p-qe9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="memberAvatar" destination="mP4-fI-60q" id="1kV-oa-mQ8"/>
+                <outlet property="memberLogin" destination="ola-kY-04f" id="mnd-86-wbp"/>
+            </connections>
+            <point key="canvasLocation" x="-133.33333333333334" y="12.723214285714285"/>
+        </tableViewCell>
+    </objects>
+</document>
