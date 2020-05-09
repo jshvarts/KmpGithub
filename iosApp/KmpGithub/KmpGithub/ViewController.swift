@@ -10,7 +10,7 @@ import UIKit
 import shared
 
 class ViewController: UIViewController, MembersView {
-  
+
   let memberList = MemberList()
   
   lazy var presenter: MembersPresenter = {
@@ -20,22 +20,29 @@ class ViewController: UIViewController, MembersView {
   @IBOutlet weak var platformName: UILabel!
   
   @IBOutlet weak var membersTableView: UITableView!
-  
-  // TODO: handle loading UI
-  var isUpdating = false
-  
-  func onUpdate(members: [Member]) {
+    
+  func showData(members: [Member]) {
     print(members)
     self.memberList.updateMembers(members)
     self.membersTableView.reloadData()
   }
-
+  
+  func showRefreshing() {
+    print("started refreshing")
+    // TODO show loading indicator
+  }
+  
+  func hideRefreshing() {
+    print("finished refreshing")
+    // TODO hide loading indicator
+  }
+  
   override func viewWillAppear(_ animated: Bool) {
-    presenter.onCreate()
+    presenter.loadMembers()
   }
   
   override func viewWillDisappear(_ animated: Bool) {
-    presenter.onDestroy()
+    presenter.stop()
   }
   
   override func viewDidLoad() {

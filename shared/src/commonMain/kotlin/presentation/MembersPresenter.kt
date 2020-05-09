@@ -5,36 +5,21 @@ import com.jshvarts.kmp.shared.model.MembersRepository
 import kotlinx.coroutines.launch
 
 class MembersPresenter(
-  private val view: MembersView,
+  override var view: MembersView?,
   private val repository: MembersRepository
 ) : BasePresenter(ApplicationDispatcher, view) {
 
-  private val onRefreshListener: () -> Unit = this::showData
-
-  override fun onCreate() {
-    view.isUpdating = isFirstDataLoading()
-    repository.onRefreshListeners += onRefreshListener
-    showData()
-    updateData()
-  }
-
-  override fun onDestroy() {
-    super.onDestroy()
-    repository.onRefreshListeners -= onRefreshListener
-  }
-
-  private fun showData() {
-    view.onUpdate(repository.members.orEmpty())
-  }
-
-  private fun updateData() {
+  fun loadMembers() {
+    view?.showRefreshing()
     launch {
-      repository.update()
-      showData()
+      val members = repository.getMembers()
+      view?.showData(members)
     }.invokeOnCompletion {
-      view.isUpdating = false
+      view?.hideRefreshing()
     }
   }
 
-  private fun isFirstDataLoading() = repository.members == null
+  override fun stop() {
+    view = null
+  }
 }

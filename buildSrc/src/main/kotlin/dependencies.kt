@@ -16,6 +16,7 @@ object AndroidX {
   const val constraintLayout = "1.1.3"
   const val material = "1.2.0-alpha05"
   const val recyclerView = "1.1.0"
+  const val swipeToRefreshLayout = "1.0.0"
 }
 
 object Coroutines {

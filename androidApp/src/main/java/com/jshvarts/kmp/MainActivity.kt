@@ -13,6 +13,7 @@ import com.jshvarts.kmp.shared.presentation.MembersPresenter
 import com.jshvarts.kmp.shared.presentation.MembersView
 import kotlinx.android.synthetic.main.activity_main.membersRecyclerView
 import kotlinx.android.synthetic.main.activity_main.platformMessage
+import kotlinx.android.synthetic.main.activity_main.pullToRefresh
 
 class MainActivity : AppCompatActivity(), MembersView {
   private val repository by lazy {
@@ -33,17 +34,27 @@ class MainActivity : AppCompatActivity(), MembersView {
 
     setupRecyclerView()
 
-    presenter.onCreate()
+    presenter.loadMembers()
+
+    pullToRefresh.setOnRefreshListener {
+      presenter.loadMembers()
+    }
   }
 
   override fun onDestroy() {
+    presenter.stop()
     super.onDestroy()
-    presenter.onDestroy()
   }
 
-  override var isUpdating = false
+  override fun showRefreshing() {
+    pullToRefresh.isRefreshing = true
+  }
 
-  override fun onUpdate(members: List<Member>) {
+  override fun hideRefreshing() {
+    pullToRefresh.isRefreshing = false
+  }
+
+  override fun showData(members: List<Member>) {
     adapter.members = members
 
     runOnUiThread {
