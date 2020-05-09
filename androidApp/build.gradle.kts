@@ -37,6 +37,7 @@ dependencies {
   implementation("androidx.constraintlayout:constraintlayout:${AndroidX.constraintLayout}")
   implementation("androidx.recyclerview:recyclerview:${AndroidX.recyclerView}")
   implementation("com.google.android.material:material:${AndroidX.material}")
+  implementation("androidx.swiperefreshlayout:swiperefreshlayout:${AndroidX.swipeToRefreshLayout}")
   implementation("com.jakewharton.timber:timber:${Versions.timberAndroid}")
   implementation("com.squareup.picasso:picasso:${Versions.picasso}")
 

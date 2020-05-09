@@ -7,20 +7,19 @@ import kotlin.coroutines.CoroutineContext
 
 abstract class BasePresenter(
   private val presenterContext: CoroutineContext,
-  private val view: BaseView
+  protected open var view: MembersView?
 ) : CoroutineScope {
 
   private val job = Job()
+
   private val exceptionHandler = CoroutineExceptionHandler { _, throwable ->
-    view.showError(throwable)
+    view?.showError(throwable)
   }
 
   override val coroutineContext: CoroutineContext
     get() = presenterContext + exceptionHandler
 
-  abstract fun onCreate()
-
-  open fun onDestroy() {
+  open fun stop() {
     job.cancel()
   }
 }

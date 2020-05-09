@@ -6,14 +6,21 @@
   android:layout_height="match_parent"
   tools:context=".MainActivity">
 
-  <androidx.recyclerview.widget.RecyclerView
-    android:id="@+id/membersRecyclerView"
+  <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
+    android:id="@+id/pullToRefresh"
     android:layout_width="0dp"
     android:layout_height="0dp"
-    app:layout_constraintBottom_toTopOf="@id/platformMessage"
-    app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toTopOf="parent" />
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toTopOf="@id/platformMessage">
+
+    <androidx.recyclerview.widget.RecyclerView
+      android:id="@+id/membersRecyclerView"
+      android:layout_width="match_parent"
+      android:layout_height="match_parent" />
+
+  </androidx.swiperefreshlayout.widget.SwipeRefreshLayout>
 
   <TextView
     android:id="@+id/platformMessage"
@@ -26,7 +33,7 @@
     app:layout_constraintBottom_toBottomOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@id/membersRecyclerView"
+    app:layout_constraintTop_toBottomOf="@id/pullToRefresh"
     tools:text="Platform" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
