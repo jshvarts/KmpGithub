@@ -46,8 +46,6 @@ kotlin {
         implementation(Ktor.Json.common)
         implementation(Ktor.Logging.common)
         implementation(Ktor.Serialization.common)
-        implementation(Ktor.serializer)
-        implementation(Serialization.runtimeCommon)
       }
     }
 
