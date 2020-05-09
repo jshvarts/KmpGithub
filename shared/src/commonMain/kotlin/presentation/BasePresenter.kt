@@ -5,7 +5,7 @@ import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Job
 import kotlin.coroutines.CoroutineContext
 
-abstract class CoroutinePresenter(
+abstract class BasePresenter(
   private val presenterContext: CoroutineContext,
   private val view: BaseView
 ) : CoroutineScope {

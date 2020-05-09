@@ -7,7 +7,7 @@ import kotlinx.coroutines.launch
 class MembersPresenter(
   private val view: MembersView,
   private val repository: MembersRepository
-) : CoroutinePresenter(ApplicationDispatcher, view) {
+) : BasePresenter(ApplicationDispatcher, view) {
 
   private val onRefreshListener: () -> Unit = this::showData
 
