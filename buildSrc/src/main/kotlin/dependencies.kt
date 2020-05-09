@@ -26,7 +26,6 @@ object Coroutines {
 object Ktor {
   const val android = "io.ktor:ktor-client-android:${Versions.ktor}"
   const val ios = "io.ktor:ktor-client-ios:${Versions.ktor}"
-  const val serializer = "io.ktor:ktor-serialization:${Versions.ktor}"
 
   object Core {
     const val common = "io.ktor:ktor-client-core:${Versions.ktor}"
@@ -56,8 +55,6 @@ object Ktor {
 object Serialization {
   const val runtime =
     "org.jetbrains.kotlinx:kotlinx-serialization-runtime:${Versions.serialization}"
-  const val runtimeCommon =
-    "org.jetbrains.kotlinx:kotlinx-serialization-runtime-common:${Versions.serialization}"
   const val runtimeNative =
     "org.jetbrains.kotlinx:kotlinx-serialization-runtime-native:${Versions.serialization}"
 }
