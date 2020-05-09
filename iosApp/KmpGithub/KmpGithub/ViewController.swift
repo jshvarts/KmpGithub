@@ -10,6 +10,7 @@ import UIKit
 import shared
 
 class ViewController: UIViewController, MembersView {
+  
   lazy var presenter: MembersPresenter = {
     MembersPresenter(view: self, repository: AppDelegate.appDelegate.dataRepository)
   }()
@@ -19,10 +20,10 @@ class ViewController: UIViewController, MembersView {
   // TODO: handle loading UI
   var isUpdating = false
   
-  func onUpdate(members: String) {
+  func onUpdate(members: [Member]) {
     print(members)
   }
-  
+
   override func viewWillAppear(_ animated: Bool) {
     presenter.onCreate()
   }
