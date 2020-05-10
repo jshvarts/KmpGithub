@@ -32,7 +32,7 @@ If you get stuck, refer to [this commit](https://github.com/jshvarts/KmpGithub/c
 ```
 target 'KmpGithub' do
   # Comment the next line if you don't want to use dynamic frameworks
-  # use_frameworks!
+  use_frameworks!
 
   # Pods for KmpGithub
   pod 'shared', :path => '../../shared'
