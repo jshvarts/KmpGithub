@@ -32,14 +32,14 @@ android {
 dependencies {
   implementation(fileTree(mapOf("dir" to "libs", "include" to listOf("*.jar"))))
   implementation(kotlin("stdlib-jdk7", Versions.kotlin))
-  implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.coroutines}")
-  implementation("androidx.appcompat:appcompat:${AndroidX.appCompat}")
-  implementation("androidx.constraintlayout:constraintlayout:${AndroidX.constraintLayout}")
-  implementation("androidx.recyclerview:recyclerview:${AndroidX.recyclerView}")
-  implementation("com.google.android.material:material:${AndroidX.material}")
-  implementation("androidx.swiperefreshlayout:swiperefreshlayout:${AndroidX.swipeToRefreshLayout}")
-  implementation("com.jakewharton.timber:timber:${Versions.timberAndroid}")
-  implementation("com.squareup.picasso:picasso:${Versions.picasso}")
+  implementation(Coroutines.android)
+  implementation(AndroidX.appCompat)
+  implementation(AndroidX.constraintLayout)
+  implementation(AndroidX.recyclerView)
+  implementation(material)
+  implementation(AndroidX.swipeToRefreshLayout)
+  implementation(timber)
+  implementation(picasso)
 
   implementation(project(":shared"))
 }
