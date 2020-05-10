@@ -1,25 +1,35 @@
 object Versions {
-  const val minSdk = 23
-  const val compileSdk = 29
-  const val targetSdk = 29
   const val androidBuildTools = "29.0.2"
-  const val picasso = "2.71828"
+  const val appCompat = "1.0.2"
+  const val compileSdk = 29
+  const val constraintLayout = "1.1.3"
+  const val coroutines = "1.3.5"
   const val kotlin = "1.3.72"
   const val ktor = "1.3.2"
+  const val material = "1.2.0-alpha05"
+  const val minSdk = 23
+  const val picasso = "2.71828"
+  const val recyclerView = "1.1.0"
   const val serialization = "0.20.0"
-  const val coroutines = "1.3.5"
-  const val timberAndroid = "4.7.1"
+  const val swipeToRefreshLayout = "1.0.0"
+  const val targetSdk = 29
+  const val timber = "4.7.1"
 }
 
+const val timber = "com.jakewharton.timber:timber:${Versions.timber}"
+const val picasso = "com.squareup.picasso:picasso:${Versions.picasso}"
+const val material = "com.google.android.material:material:${Versions.material}"
+
 object AndroidX {
-  const val appCompat = "1.0.2"
-  const val constraintLayout = "1.1.3"
-  const val material = "1.2.0-alpha05"
-  const val recyclerView = "1.1.0"
-  const val swipeToRefreshLayout = "1.0.0"
+  const val appCompat = "androidx.appcompat:appcompat:${Versions.appCompat}"
+  const val constraintLayout = "androidx.constraintlayout:constraintlayout:${Versions.constraintLayout}"
+  const val recyclerView = "androidx.recyclerview:recyclerview:${Versions.recyclerView}"
+  const val swipeToRefreshLayout = "androidx.swiperefreshlayout:swiperefreshlayout:${Versions.swipeToRefreshLayout}"
 }
 
 object Coroutines {
+  const val android = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Versions.ktor}"
+
   object Core {
     const val core = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Versions.coroutines}"
     const val common = "org.jetbrains.kotlinx:kotlinx-coroutines-core-common:${Versions.coroutines}"
