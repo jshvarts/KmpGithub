@@ -4,7 +4,7 @@
 
 1. Integrate [Cocoapods plugin for Kotlin Native](https://github.com/JetBrains/kotlin-native/blob/master/COCOAPODS.md) 
 
-See shared/build.gradle for cocoapods plugin setup. Note that setting `version` is required:
+See `shared/build.gradle` for cocoapods plugin setup. Note that setting `version` is required:
 
 ```
 // CocoaPods requires the podspec to have a version.
@@ -42,7 +42,7 @@ end
 7. Run `pod install` inside the XCode project folder.
 
 8. Open the project in XCode by executing `open <proj-name>.xcworkspace` from your ios project root folder.
- 
-9. Use `import shared` in your code and utilize shared Kotlin code from swift! 
+
+9. Use `import shared` in your code and utilize shared Kotlin code from Swift! If there are any build errors, try building the project by running in iOS simulator. 
 
 
